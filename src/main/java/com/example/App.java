@@ -4,6 +4,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        GrafoKonigsberg grafo = new GrafoKonigsberg();
+        grafo.desenhaMatrizAdjacencia();
+        grafo.mostrarLigacoes();
+        grafo.percorrerCaminhos(0);
     }
 }
